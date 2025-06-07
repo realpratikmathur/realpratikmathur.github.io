@@ -1,0 +1,153 @@
+{
+  "personal": {
+    "name": "ALEX CHEN",
+    "title": "Full-Stack Software Engineer & System Architect",
+    "email": "alex.chen@email.com",
+    "phone": "(555) 123-4567",
+    "location": "San Francisco, CA",
+    "website": "alexchen.dev"
+  },
+  "about": {
+    "description": "Passionate software engineer with 5+ years of experience building scalable web applications and distributed systems. I love solving complex problems with clean, efficient code and have a particular interest in performance optimization and system design.",
+    "additional": "When I'm not coding, you can find me contributing to open source projects, mentoring junior developers, or exploring the latest in cloud technologies."
+  },
+  "skills": {
+    "Languages": [
+      "JavaScript/TypeScript",
+      "Python",
+      "Java",
+      "Go",
+      "C++",
+      "SQL"
+    ],
+    "Frontend": [
+      "React/Next.js",
+      "Vue.js",
+      "HTML5/CSS3",
+      "Tailwind CSS",
+      "WebGL/Three.js",
+      "PWA Development"
+    ],
+    "Backend": [
+      "Node.js/Express",
+      "Django/FastAPI",
+      "Spring Boot",
+      "GraphQL/REST APIs",
+      "Microservices",
+      "WebSockets"
+    ],
+    "Cloud & DevOps": [
+      "AWS/GCP/Azure",
+      "Docker/Kubernetes",
+      "CI/CD Pipelines",
+      "Terraform",
+      "Monitoring & Logging",
+      "Load Balancing"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Elasticsearch",
+      "DynamoDB",
+      "Time Series DBs"
+    ],
+    "Tools & Others": [
+      "Git/GitHub Actions",
+      "JIRA/Confluence",
+      "Figma/Adobe XD",
+      "Machine Learning",
+      "System Design",
+      "Agile/Scrum"
+    ]
+  },
+  "projects": [
+    {
+      "title": "CloudSync Dashboard",
+      "technologies": "React • Node.js • PostgreSQL • AWS • Docker",
+      "description": "A real-time analytics dashboard for monitoring distributed cloud services. Features include live data visualization, custom alerting, and automated scaling recommendations. Handles 10M+ events per day with sub-second latency.",
+      "links": [
+        { "text": "🔗 Live Demo", "url": "#" },
+        { "text": "📂 GitHub", "url": "#" },
+        { "text": "📝 Case Study", "url": "#" }
+      ]
+    },
+    {
+      "title": "Neural Code Assistant",
+      "technologies": "Python • TensorFlow • FastAPI • Vue.js • MongoDB",
+      "description": "An AI-powered code completion and review tool that integrates with popular IDEs. Uses transformer architecture to provide context-aware suggestions and identifies potential bugs. Trained on 50M+ lines of open source code.",
+      "links": [
+        { "text": "🔗 Demo Video", "url": "#" },
+        { "text": "📂 GitHub", "url": "#" },
+        { "text": "📊 Metrics", "url": "#" }
+      ]
+    },
+    {
+      "title": "GameStream Platform",
+      "technologies": "Go • WebRTC • Kubernetes • Redis • React Native",
+      "description": "Low-latency game streaming platform supporting 1080p@60fps with adaptive bitrate. Built custom WebRTC implementation and edge computing infrastructure. Scales to 100K+ concurrent users across multiple regions.",
+      "links": [
+        { "text": "🔗 Live Platform", "url": "#" },
+        { "text": "📂 GitHub", "url": "#" },
+        { "text": "🏗️ Architecture", "url": "#" }
+      ]
+    },
+    {
+      "title": "Open Source Contributions",
+      "technologies": "Various Technologies • Community Driven",
+      "description": "Active contributor to major open source projects including React Router, Kubernetes, and TensorFlow. Maintained several popular npm packages with 500K+ downloads. Regular speaker at tech conferences and meetups.",
+      "links": [
+        { "text": "🌟 GitHub Profile", "url": "#" },
+        { "text": "📦 NPM Packages", "url": "#" },
+        { "text": "🎤 Talks", "url": "#" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "TechFlow Inc.",
+      "duration": "Jan 2022 - Present",
+      "responsibilities": [
+        "Lead development of microservices architecture serving 5M+ daily active users",
+        "Designed and implemented real-time data pipeline processing 50TB+ daily",
+        "Reduced system latency by 40% through performance optimization and caching strategies",
+        "Mentored team of 6 junior developers and established code review best practices",
+        "Migrated legacy monolith to containerized services, improving deployment speed by 300%"
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "StartupLabs",
+      "duration": "Mar 2020 - Dec 2021",
+      "responsibilities": [
+        "Built MVP for fintech platform from scratch, attracting $2M seed funding",
+        "Developed responsive web app and mobile app using React Native",
+        "Implemented secure payment processing and KYC verification systems",
+        "Set up CI/CD pipeline and automated testing, reducing bugs by 60%",
+        "Collaborated directly with founders on product strategy and technical decisions"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "DataCorp Solutions",
+      "duration": "Jun 2019 - Feb 2020",
+      "responsibilities": [
+        "Developed ETL pipelines for processing customer analytics data",
+        "Built internal tools for data visualization and reporting",
+        "Optimized database queries, improving report generation speed by 70%",
+        "Participated in agile development process and sprint planning"
+      ]
+    }
+  ],
+  "footer": {
+    "message": "Let's build something amazing together!",
+    "contactEmail": "alex.chen@email.com",
+    "socialLinks": [
+      { "text": "GitHub", "url": "#" },
+      { "text": "LinkedIn", "url": "#" },
+      { "text": "Twitter", "url": "#" },
+      { "text": "Blog", "url": "#" }
+    ]
+  }
+}
