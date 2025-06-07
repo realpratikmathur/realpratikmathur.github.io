@@ -3,329 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Chen - Software Engineer</title>
-    <style>
-        body {
-            font-family: 'Monaco', 'Courier New', monospace;
-            background: #0a0a0a;
-            color: #00ff00;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            border: 2px solid #00ff00;
-            padding: 30px;
-            background: rgba(0, 255, 0, 0.1);
-            position: relative;
-        }
-        
-        .terminal-prompt {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 12px;
-            color: #00ffff;
-        }
-        
-        .name {
-            font-size: 2.5em;
-            color: #00ffff;
-            margin: 0;
-            text-shadow: 0 0 10px #00ffff;
-        }
-        
-        .title {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: #ffff00;
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: #00ff00;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-            border: 2px solid #00ff00;
-            background: rgba(0, 255, 0, 0.05);
-            position: relative;
-        }
-        
-        .section-header {
-            background: #003300;
-            color: #00ffff;
-            padding: 15px 20px;
-            margin: 0;
-            border-bottom: 1px solid #00ff00;
-            font-size: 1.4em;
-        }
-        
-        .section-content {
-            padding: 20px;
-        }
-        
-        .project {
-            background: #111;
-            border: 1px solid #333;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .project:hover {
-            border-color: #00ff00;
-            background: rgba(0, 255, 0, 0.05);
-        }
-        
-        .project-title {
-            color: #ffff00;
-            font-size: 1.3em;
-            margin: 0 0 10px 0;
-        }
-        
-        .project-tech {
-            color: #ff00ff;
-            font-size: 0.9em;
-            margin: 10px 0;
-        }
-        
-        .project-description {
-            color: #00ff00;
-            margin: 10px 0;
-        }
-        
-        .project-links {
-            margin-top: 15px;
-            display: flex;
-            gap: 15px;
-        }
-        
-        .link {
-            color: #00ffff;
-            text-decoration: none;
-            border: 1px solid #00ffff;
-            padding: 5px 10px;
-            border-radius: 3px;
-            transition: all 0.2s ease;
-        }
-        
-        .link:hover {
-            background: #00ffff;
-            color: #000;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .skill-category {
-            background: #001100;
-            border: 1px solid #003300;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        
-        .skill-category h4 {
-            color: #ffff00;
-            margin: 0 0 10px 0;
-            border-bottom: 1px solid #333;
-            padding-bottom: 5px;
-        }
-        
-        .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .skill-list li {
-            color: #00ff00;
-            padding: 3px 0;
-            position: relative;
-            padding-left: 15px;
-        }
-        
-        .skill-list li::before {
-            content: ">";
-            position: absolute;
-            left: 0;
-            color: #00ffff;
-        }
-        
-        .experience-item {
-            background: #111;
-            border-left: 4px solid #00ff00;
-            padding: 20px;
-            margin: 15px 0;
-            position: relative;
-        }
-        
-        .job-title {
-            color: #ffff00;
-            font-size: 1.2em;
-            margin: 0;
-        }
-        
-        .company {
-            color: #ff00ff;
-            font-size: 1.1em;
-            margin: 5px 0;
-        }
-        
-        .duration {
-            color: #00ffff;
-            font-size: 0.9em;
-            margin: 5px 0;
-        }
-        
-        .job-description {
-            color: #00ff00;
-            margin: 15px 0 0 0;
-        }
-        
-        .job-description li {
-            margin: 5px 0;
-            padding-left: 15px;
-            position: relative;
-        }
-        
-        .job-description li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #00ffff;
-        }
-        
-        .terminal-window {
-            background: #000;
-            border: 2px solid #00ff00;
-            border-radius: 5px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        
-        .terminal-header {
-            background: #003300;
-            padding: 10px 15px;
-            color: #00ffff;
-            font-size: 0.9em;
-            border-bottom: 1px solid #00ff00;
-        }
-        
-        .terminal-body {
-            padding: 15px;
-            color: #00ff00;
-            font-size: 0.9em;
-        }
-        
-        .command-line {
-            color: #00ffff;
-        }
-        
-        .output {
-            color: #00ff00;
-            margin: 5px 0;
-            padding-left: 20px;
-        }
-        
-        .blink {
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            border-top: 2px solid #00ff00;
-            background: rgba(0, 255, 0, 0.05);
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 15px;
-        }
-        
-        .social-link {
-            color: #00ffff;
-            text-decoration: none;
-            padding: 8px 15px;
-            border: 1px solid #00ffff;
-            border-radius: 3px;
-            transition: all 0.2s ease;
-        }
-        
-        .social-link:hover {
-            background: #00ffff;
-            color: #000;
-        }
-        
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .name {
-                font-size: 2em;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .project-links {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+    <title id="page-title">Loading Portfolio...</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <!-- Header Section -->
         <div class="header">
             <div class="terminal-prompt">user@portfolio:~$</div>
-            <h1 class="name">ALEX CHEN</h1>
-            <p class="title">Full-Stack Software Engineer & System Architect</p>
-            <div class="contact-info">
-                <div class="contact-item">📧 alex.chen@email.com</div>
-                <div class="contact-item">📱 (555) 123-4567</div>
-                <div class="contact-item">📍 San Francisco, CA</div>
-                <div class="contact-item">🌐 alexchen.dev</div>
+            <h1 class="name" id="name">Loading...</h1>
+            <p class="title" id="job-title">Loading...</p>
+            <div class="contact-info" id="contact-info">
+                <!-- Contact items will be populated by JavaScript -->
             </div>
         </div>
 
@@ -337,14 +26,11 @@
                     <div class="terminal-header">terminal - about</div>
                     <div class="terminal-body">
                         <div class="command-line">$ cat about.txt</div>
-                        <div class="output">
-                            Passionate software engineer with 5+ years of experience building scalable web applications 
-                            and distributed systems. I love solving complex problems with clean, efficient code and 
-                            have a particular interest in performance optimization and system design.
+                        <div class="output" id="about-description">
+                            Loading...
                         </div>
-                        <div class="output">
-                            When I'm not coding, you can find me contributing to open source projects, 
-                            mentoring junior developers, or exploring the latest in cloud technologies.
+                        <div class="output" id="about-additional">
+                            Loading...
                         </div>
                         <div class="command-line">$ █<span class="blink">_</span></div>
                     </div>
@@ -356,73 +42,8 @@
         <div class="section">
             <h2 class="section-header">$ ls -la skills/</h2>
             <div class="section-content">
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Languages</h4>
-                        <ul class="skill-list">
-                            <li>JavaScript/TypeScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>Go</li>
-                            <li>C++</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Frontend</h4>
-                        <ul class="skill-list">
-                            <li>React/Next.js</li>
-                            <li>Vue.js</li>
-                            <li>HTML5/CSS3</li>
-                            <li>Tailwind CSS</li>
-                            <li>WebGL/Three.js</li>
-                            <li>PWA Development</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Backend</h4>
-                        <ul class="skill-list">
-                            <li>Node.js/Express</li>
-                            <li>Django/FastAPI</li>
-                            <li>Spring Boot</li>
-                            <li>GraphQL/REST APIs</li>
-                            <li>Microservices</li>
-                            <li>WebSockets</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Cloud & DevOps</h4>
-                        <ul class="skill-list">
-                            <li>AWS/GCP/Azure</li>
-                            <li>Docker/Kubernetes</li>
-                            <li>CI/CD Pipelines</li>
-                            <li>Terraform</li>
-                            <li>Monitoring & Logging</li>
-                            <li>Load Balancing</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Databases</h4>
-                        <ul class="skill-list">
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>Redis</li>
-                            <li>Elasticsearch</li>
-                            <li>DynamoDB</li>
-                            <li>Time Series DBs</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Tools & Others</h4>
-                        <ul class="skill-list">
-                            <li>Git/GitHub Actions</li>
-                            <li>JIRA/Confluence</li>
-                            <li>Figma/Adobe XD</li>
-                            <li>Machine Learning</li>
-                            <li>System Design</li>
-                            <li>Agile/Scrum</li>
-                        </ul>
-                    </div>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Skills will be populated by JavaScript -->
                 </div>
             </div>
         </div>
@@ -430,110 +51,16 @@
         <!-- Projects Section -->
         <div class="section">
             <h2 class="section-header">$ cd projects/ && ls -la</h2>
-            <div class="section-content">
-                <div class="project">
-                    <h3 class="project-title">CloudSync Dashboard</h3>
-                    <div class="project-tech">React • Node.js • PostgreSQL • AWS • Docker</div>
-                    <div class="project-description">
-                        A real-time analytics dashboard for monitoring distributed cloud services. Features include 
-                        live data visualization, custom alerting, and automated scaling recommendations. 
-                        Handles 10M+ events per day with sub-second latency.
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">🔗 Live Demo</a>
-                        <a href="#" class="link">📂 GitHub</a>
-                        <a href="#" class="link">📝 Case Study</a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3 class="project-title">Neural Code Assistant</h3>
-                    <div class="project-tech">Python • TensorFlow • FastAPI • Vue.js • MongoDB</div>
-                    <div class="project-description">
-                        An AI-powered code completion and review tool that integrates with popular IDEs. 
-                        Uses transformer architecture to provide context-aware suggestions and identifies 
-                        potential bugs. Trained on 50M+ lines of open source code.
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">🔗 Demo Video</a>
-                        <a href="#" class="link">📂 GitHub</a>
-                        <a href="#" class="link">📊 Metrics</a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3 class="project-title">GameStream Platform</h3>
-                    <div class="project-tech">Go • WebRTC • Kubernetes • Redis • React Native</div>
-                    <div class="project-description">
-                        Low-latency game streaming platform supporting 1080p@60fps with adaptive bitrate. 
-                        Built custom WebRTC implementation and edge computing infrastructure. 
-                        Scales to 100K+ concurrent users across multiple regions.
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">🔗 Live Platform</a>
-                        <a href="#" class="link">📂 GitHub</a>
-                        <a href="#" class="link">🏗️ Architecture</a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3 class="project-title">Open Source Contributions</h3>
-                    <div class="project-tech">Various Technologies • Community Driven</div>
-                    <div class="project-description">
-                        Active contributor to major open source projects including React Router, 
-                        Kubernetes, and TensorFlow. Maintained several popular npm packages with 500K+ downloads. 
-                        Regular speaker at tech conferences and meetups.
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">🌟 GitHub Profile</a>
-                        <a href="#" class="link">📦 NPM Packages</a>
-                        <a href="#" class="link">🎤 Talks</a>
-                    </div>
-                </div>
+            <div class="section-content" id="projects-content">
+                <!-- Projects will be populated by JavaScript -->
             </div>
         </div>
 
         <!-- Experience Section -->
         <div class="section">
             <h2 class="section-header">$ cat work_history.log</h2>
-            <div class="section-content">
-                <div class="experience-item">
-                    <h3 class="job-title">Senior Software Engineer</h3>
-                    <div class="company">TechFlow Inc.</div>
-                    <div class="duration">Jan 2022 - Present</div>
-                    <ul class="job-description">
-                        <li>Lead development of microservices architecture serving 5M+ daily active users</li>
-                        <li>Designed and implemented real-time data pipeline processing 50TB+ daily</li>
-                        <li>Reduced system latency by 40% through performance optimization and caching strategies</li>
-                        <li>Mentored team of 6 junior developers and established code review best practices</li>
-                        <li>Migrated legacy monolith to containerized services, improving deployment speed by 300%</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3 class="job-title">Full-Stack Developer</h3>
-                    <div class="company">StartupLabs</div>
-                    <div class="duration">Mar 2020 - Dec 2021</div>
-                    <ul class="job-description">
-                        <li>Built MVP for fintech platform from scratch, attracting $2M seed funding</li>
-                        <li>Developed responsive web app and mobile app using React Native</li>
-                        <li>Implemented secure payment processing and KYC verification systems</li>
-                        <li>Set up CI/CD pipeline and automated testing, reducing bugs by 60%</li>
-                        <li>Collaborated directly with founders on product strategy and technical decisions</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3 class="job-title">Software Engineer</h3>
-                    <div class="company">DataCorp Solutions</div>
-                    <div class="duration">Jun 2019 - Feb 2020</div>
-                    <ul class="job-description">
-                        <li>Developed ETL pipelines for processing customer analytics data</li>
-                        <li>Built internal tools for data visualization and reporting</li>
-                        <li>Optimized database queries, improving report generation speed by 70%</li>
-                        <li>Participated in agile development process and sprint planning</li>
-                    </ul>
-                </div>
+            <div class="section-content" id="experience-content">
+                <!-- Experience will be populated by JavaScript -->
             </div>
         </div>
 
@@ -542,20 +69,121 @@
             <div class="terminal-window">
                 <div class="terminal-header">Contact Terminal</div>
                 <div class="terminal-body">
-                    <div class="command-line">$ echo "Let's build something amazing together!"</div>
-                    <div class="output">Let's build something amazing together!</div>
-                    <div class="command-line">$ contact --email alex.chen@email.com</div>
+                    <div class="command-line">$ echo "<span id="footer-message">Loading...</span>"</div>
+                    <div class="output" id="footer-message-output">Loading...</div>
+                    <div class="command-line">$ contact --email <span id="footer-email">loading...</span></div>
                     <div class="output">Message sent successfully. Response time: Usually within 24 hours.</div>
                 </div>
             </div>
             
-            <div class="social-links">
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Blog</a>
+            <div class="social-links" id="social-links">
+                <!-- Social links will be populated by JavaScript -->
             </div>
         </div>
     </div>
+
+    <script>
+        // Load resume data and populate the page
+        async function loadResumeData() {
+            try {
+                const response = await fetch('resume-data.json');
+                const data = await response.json();
+                populatePage(data);
+            } catch (error) {
+                console.error('Error loading resume data:', error);
+                // Fallback - show error message
+                document.getElementById('name').textContent = 'Error loading portfolio';
+            }
+        }
+
+        function populatePage(data) {
+            // Update page title
+            document.getElementById('page-title').textContent = `${data.personal.name.replace('ALEX CHEN', 'Alex Chen')} - ${data.personal.title}`;
+            
+            // Populate header
+            document.getElementById('name').textContent = data.personal.name;
+            document.getElementById('job-title').textContent = data.personal.title;
+            
+            // Populate contact info
+            const contactInfo = document.getElementById('contact-info');
+            contactInfo.innerHTML = `
+                <div class="contact-item">📧 ${data.personal.email}</div>
+                <div class="contact-item">📱 ${data.personal.phone}</div>
+                <div class="contact-item">📍 ${data.personal.location}</div>
+                <div class="contact-item">🌐 ${data.personal.website}</div>
+            `;
+
+            // Populate about section
+            document.getElementById('about-description').textContent = data.about.description;
+            document.getElementById('about-additional').textContent = data.about.additional;
+
+            // Populate skills
+            const skillsGrid = document.getElementById('skills-grid');
+            skillsGrid.innerHTML = '';
+            Object.entries(data.skills).forEach(([category, skills]) => {
+                const skillCategory = document.createElement('div');
+                skillCategory.className = 'skill-category';
+                skillCategory.innerHTML = `
+                    <h4>${category}</h4>
+                    <ul class="skill-list">
+                        ${skills.map(skill => `<li>${skill}</li>`).join('')}
+                    </ul>
+                `;
+                skillsGrid.appendChild(skillCategory);
+            });
+
+            // Populate projects
+            const projectsContent = document.getElementById('projects-content');
+            projectsContent.innerHTML = '';
+            data.projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.className = 'project';
+                projectDiv.innerHTML = `
+                    <h3 class="project-title">${project.title}</h3>
+                    <div class="project-tech">${project.technologies}</div>
+                    <div class="project-description">${project.description}</div>
+                    <div class="project-links">
+                        ${project.links.map(link => `<a href="${link.url}" class="link">${link.text}</a>`).join('')}
+                    </div>
+                `;
+                projectsContent.appendChild(projectDiv);
+            });
+
+            // Populate experience
+            const experienceContent = document.getElementById('experience-content');
+            experienceContent.innerHTML = '';
+            data.experience.forEach(job => {
+                const experienceDiv = document.createElement('div');
+                experienceDiv.className = 'experience-item';
+                experienceDiv.innerHTML = `
+                    <h3 class="job-title">${job.title}</h3>
+                    <div class="company">${job.company}</div>
+                    <div class="duration">${job.duration}</div>
+                    <ul class="job-description">
+                        ${job.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                    </ul>
+                `;
+                experienceContent.appendChild(experienceDiv);
+            });
+
+            // Populate footer
+            document.getElementById('footer-message').textContent = data.footer.message;
+            document.getElementById('footer-message-output').textContent = data.footer.message;
+            document.getElementById('footer-email').textContent = data.footer.contactEmail;
+            
+            const socialLinks = document.getElementById('social-links');
+            socialLinks.innerHTML = '';
+            data.footer.socialLinks.forEach(link => {
+                const socialLink = document.createElement('a');
+                socialLink.href = link.url;
+                socialLink.className = 'social-link';
+                socialLink.textContent = link.text;
+                socialLinks.appendChild(socialLink);
+            });
+        }
+
+        // Load the data when the page loads
+        document.addEventListener('DOMContentLoaded', loadResumeData);
+    </script>
 </body>
 </html>
